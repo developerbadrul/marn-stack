@@ -5,6 +5,8 @@ import Login from "../pages/Login/Login";
 import Register from "../pages/Register/Register";
 import AddOperator from "../pages/AddOperator/AddOperator";
 import OperatorList from "../pages/OperatorList/OperatorList";
+import AddShop from "../pages/AddShop/AddShop";
+import ShopList from "../pages/ShopList/ShopList";
 
  const router = createBrowserRouter([
     {
@@ -30,6 +32,14 @@ import OperatorList from "../pages/OperatorList/OperatorList";
             {
                 path:"/operator-list",
                 element: <OperatorList></OperatorList>
+            },
+            {
+                path:"/add-shop",
+                element: <AddShop></AddShop>
+            },
+            {
+                path:"/shop-list",
+                element: <ShopList></ShopList>
             },
         ]
     }
